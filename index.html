@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Report</title>
+<link rel="stylesheet" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input:checkbox, input:radio, input:file, select").uniform();
+      });
+    </script>
+</head>
+<body>
+<article>
+<h1>Lost and Found</h1>
+<form action="insertreport.php" method="post">
+	<ul>
+            
+		<li>
+        	<label for="name">Employee ID</label>
+            <input type="text" size="40" id="name"  name="EID"/>
+        </li>
+		
+        <li>
+        	<label for="name">Object</label>
+            <input type="text" size="40" id="name"  name="ONAME"/>
+        </li>
+		
+		<li>
+        	<label for="name">Description</label>
+            <input type="text" size="40" id="name"  name="DESC"/>
+        </li>
+        
+        <li>
+        	<label for="name">Place found</label>
+            <input type="text" size="40" id="name"  name="PLACE"/>
+        </li>
+        
+        <label for="name">Date</label>
+        <input type="text" size="40" id="name" Name="DATEE">
+       
+	</ul>
+	<br>
+	<br>
+	<br>
+	
+    <p>
+        <button type="submit" class="action">Call to action</button>
+        <button type="reset" class="right">Reset</button>
+    </p>
+</form>
+</article>
+<footer>
+<p></a></p>
+</footer>
